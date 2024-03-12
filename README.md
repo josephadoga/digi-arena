@@ -1,3 +1,3 @@
-### Digital Arena Website
+# Digital Arena Website
 
-# A site that sells Electronics
+### A site that sells Electronics
