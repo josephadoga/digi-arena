@@ -5,12 +5,9 @@
 /*  App                                                  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-:root {
-    --background-dark: rgb(24, 23, 31);
-}
-
 body {
     background-color: var(--app-background-white);
+    font-family: 'Nunito Sans', 'Open Sans', Arial, sans-serif;
 }
 
 .container {
