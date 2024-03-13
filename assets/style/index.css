@@ -159,3 +159,44 @@ button:last-of-type {
 .image {
     width: 50%;
 }
+
+/* responsiveness */
+
+/* laptop view */
+@media (min-width: 769px) {
+    .container {
+        justify-content: space-evenly;
+    }
+}
+
+/* tablet view */
+@media (min-width: 481px) and (max-width: 768px){
+    .text {
+        margin-left: 6%;
+    }
+}
+
+/* mobile view */
+@media (max-width: 480px){
+
+    .promotions {
+        margin-top: 20%;
+    }
+
+    .text {
+        margin-left: 10%;
+    }
+
+    .container {
+        display: grid;
+    }
+
+    button:last-of-type {
+        margin-left: 5%;
+    }
+
+    .image {
+        margin-top: 10%;
+        width: 100%;
+    }
+}
