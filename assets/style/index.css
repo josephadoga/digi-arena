@@ -10,9 +10,6 @@ body {
     font-family: 'Nunito Sans', 'Open Sans', Arial, sans-serif;
 }
 
-main {
-    min-height: 100dvh; /*for various devices dvh is better*/
-}
 
 .container {
     width: min(100% - 30px, 1080px);
@@ -32,6 +29,12 @@ header {
     min-width: 100%;
     height: 70px;
     background-color: #003DA6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,5 +112,27 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #9a9aff;
+}
+
+/*----Hero-banner----*/
+section {
+    width: 100%;
+}
+
+.slider_banner {
+    margin-top: 71px;
+    border: 2px solid #000;
+    height: 420px;
+    width: 200dvw;
+    display: flex;
+    justify-content: center;
+}
+
+.slide_1 {
+    background-image: url(../media/smartphone.jpg);
+}
+
+.slide_2 {
+
 }
 
