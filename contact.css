@@ -263,3 +263,35 @@ footer .copyright {
     font-size: 15px;
 }
 
+/* ............................................................. */
+/* Responsive design                                             */
+/* ............................................................. */
+
+@media (max-width: 991px) {
+    body {
+        background: #f2f3f4;
+    }
+    .contact-us {
+        padding: 20px;
+    }
+    .box {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "form" "info" "map";
+    }
+    .map {
+        min-height: 300px;
+        padding: 0;
+    }
+    .form-box .row50 {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+    .input-box {
+        width: 100%;
+    }
+    .contact {
+        padding: 30px;
+    }
+}
