@@ -10,6 +10,10 @@ body {
     font-family: 'Nunito Sans', 'Open Sans', Arial, sans-serif;
 }
 
+main {
+    min-height: 100dvh; /*for various devices dvh is better*/
+}
+
 .container {
     width: min(100% - 30px, 1080px);
     margin-inline: auto;
@@ -19,3 +23,93 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Component                                            */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*----Header----*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 70px;
+    background-color: #003DA6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    padding: 10px;
+    text-align: center;
+    margin-left: 20px;
+    color: #e2e3f4;/*--for lighter color--*/
+}
+
+nav {
+    padding: 10px;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.more {
+    color: #e2e3f4;
+    margin-right: 20px;
+    padding: 10px;
+    transition: color 0.25s ease-in-out;
+}
+
+.more:hover {
+    color: #9a9aff;
+}
+
+/*----laptop----*/
+@media (min-width: 380px) and (max-width: 1600px) {
+    header .more {
+        display: none;
+        visibility: hidden;
+    }
+    header nav {
+        visibility: visible;
+    }
+}
+
+/*----tablet----*/
+/*@media (min-width: 482px) and (max-width: 770px) {
+    header .more {
+        visibility: visible;
+    }
+    header nav {
+        visibility: hidden;
+    }
+}*/
+
+/*---mobile---*/
+@media (min-width: 320px) and (max-width: 481px) {
+    header .more {
+        visibility: visible;
+    }
+    header nav {
+        visibility: hidden;
+    }
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #e2e3f4;
+    letter-spacing: 0.2px;
+    transition: color 0.25s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #9a9aff;
+}
+
