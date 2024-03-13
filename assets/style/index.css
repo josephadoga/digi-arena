@@ -19,3 +19,33 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Component                                            */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+/*------------------------------------------------------*/
+/*    promotions                                        */
+/*------------------------------------------------------*/
+
+.promotions {
+    width: 100%;
+    height: 500px;
+    background-color: #bb5656;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+button:first-of-type {
+    background-color: aquamarine;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+}
+
+button:last-of-type {
+    background-color: blueviolet;
+    margin-left: 1%;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+}
