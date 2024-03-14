@@ -21,14 +21,15 @@ body {
 /*  Component                                            */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
+
 /*----Header----*/
 header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     min-width: 100%;
     height: 70px;
-    background-color: #003DA6;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +46,7 @@ header h1{
     padding: 10px;
     text-align: center;
     margin-left: 20px;
-    color: #e2e3f4;/*--for lighter color--*/
+    color: var(--purple-dry);/*--for lighter color--*/
 }
 
 nav {
@@ -55,14 +56,14 @@ nav {
 }
 
 .more {
-    color: #e2e3f4;
+    color: var(--purple-dry);
     margin-right: 20px;
     padding: 10px;
     transition: color 0.25s ease-in-out;
 }
 
 .more:hover {
-    color: #9a9aff;
+    color: var(--hover-color);
 }
 
 /*----laptop----*/
@@ -104,35 +105,96 @@ nav ul li a {
     text-decoration: none;
     font-family:monospace, "Nothing You Could Do" ;
     font-weight: 100;
-    color: #e2e3f4;
+    color: var(--purple-dry);
     letter-spacing: 0.2px;
     transition: color 0.25s ease-in-out;
     cursor: pointer;
 }
 
 nav ul li a:hover {
-    color: #9a9aff;
+    color: var(--hover-color);
 }
 
-/*----Hero-banner----*/
-section {
-    width: 100%;
-}
+/*----
+-----Hero-banner----
+------*/
 
-.slider_banner {
-    margin-top: 71px;
-    border: 2px solid #000;
-    height: 420px;
-    width: 200dvw;
+
+.case {
+    height: 400px;
+    background-color: #e0e0e0;
+    position: relative;
+    overflow: hidden;
+}
+.slider {
+    height: 100%;
+    width: 200%;
     display: flex;
-    justify-content: center;
+    transition: all 0.3s;
+}
+
+.slider div {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
 .slide_1 {
-    background-image: url(../media/smartphone.jpg);
+    background-color: #AE2E01;
 }
 
 .slide_2 {
+    background-color: #000;
+}
 
+.slide_1 img{
+    height: 400px;
+}
+
+.slide_2 img{
+    height: 400px;
+}
+
+.controls .arrow {
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 10px;
+    color: var(--purple-dry);
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+.controls ul {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.controls ul li {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #333;
+    border-radius: 50px;
+    margin: 10px;
+    background-color: var(--purple-dry);
+    cursor: pointer;
+}
+
+.controls ul li.selected {
+    background: transparent;
 }
 
