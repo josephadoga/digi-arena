@@ -150,6 +150,28 @@ nav ul li a:hover {
     background-color: #AE2E01;
 }
 
+.slide_1 p {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    width: 50%;
+    height: 70%;
+    align-items: center;
+}
+
+.slide_2 p {
+    color: #fff;
+    position: absolute;
+    font-style: oblique;
+    width: 50%;
+    padding: 72px;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: left;
+}
+
 .controls .arrow {
     position: absolute;
     top: 50%;
@@ -191,5 +213,14 @@ nav ul li a:hover {
 
 .controls ul li.selected {
     background: transparent;
+}
+
+/*--Responsiveness of banner*/
+@media (max-width: 900px) {
+      p, img {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 }
 
