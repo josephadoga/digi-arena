@@ -24,13 +24,110 @@ body {
 /*  Component                                            */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
+/* ------------------------------------------------- */
+/*  login section                                    */
+/* --------------------------------------------------*/
+.sign-up-section {
+    background-color: var(--app-background-white);
+}
+
+.sign-up-section form {
+    width: 300px;
+}
+
+.sign-up-section input {
+    height: 46px;
+    border-radius: 50px;
+    font-size: 17px;
+    display: block;
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+    padding: 0 20px;
+}
+
+.sign-up-section input + input {
+    margin-top: 20px;
+}
+
+input[type=text] {
+    /* background-size: 16px; */
+    border: 1px solid rgb(255 255 255 / 0.15);
+}
+
+input[type=text]:focus {
+    border: 1px solid rgb(255 255 255 / 0.35);
+}
+
+input[type=button] {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    background-color: #3c57ff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: #3865ff;
+}
+
+.sign-up-section {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 34rem;
+    padding: 20px 2.5rem;
+    background-color: var(--app-background-white);
+    border-radius: 1rem;
+    cursor: default;
+    overflow: hidden;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate(-50%, -52%);
+       -moz-transform: translate(-50%, -52%);
+           transform: translate(-50%, -52%);
+}
+  
+.sign-up-section.isvisible {
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 5555;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(16, 18, 20, .55);
+    cursor: pointer
+}
+  
+.overlay.isvisible {
+    opacity: 1;
+    visibility: visible;
+}
+  
+.sign-up-section {
+    transition: all .2s ease-in-out;
+}
+  
 
 /*------------------------------------------------------*/
 /*    Hero Banner                                       */
 /*------------------------------------------------------*/
 
 .case {
-    height: 550px;
+    height: 570px;
     background-color: #e0e0e0;
     position: relative;
     overflow: hidden;

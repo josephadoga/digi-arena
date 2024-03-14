@@ -13,23 +13,37 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Organizer                                            */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+function onEvent(event, selector, callback) {
+    return selector.addEventListener(event, callback);
+}
 
-const slider = document.querySelector('.slider');
+function select(selector, parent = document) {
+    return parent.querySelector(selector);
+}
 
-const leftArrow = document.querySelector('.left');
 
-const rightArrow = document.querySelector('.right');
+const slider = select('.slider');
 
-const indicatorParents = document.querySelector('.controls ul');
+const leftArrow = select('.left');
 
-const productClick = document.querySelector('.one')
+const rightArrow = select('.right');
+
+const indicatorParents = select('.controls ul');
+
+const productClick = select('.one');
+
+const dialog = select('.sign-up-section');
+
+const overlay = select('.overlay');
+
+const contact = select('.sign-up-load');
 
 let sectionIndex = 0;
-
+let isVisible = false;
     
- productClick.addEventListener('click', function() {
+productClick.addEventListener('click', function() {
      window.location.href = './detail.html';
- });
+});
 
 function setIndex() {
     document.querySelector('.controls .selected').classList.remove('selected');
@@ -58,5 +72,41 @@ leftArrow.addEventListener('click', function() {
     
 });
 
+function showDialog() {
+    dialog.classList.add('isvisible');
+    overlay.classList.add('isvisible');
+    isVisible = true;
+}
+  
+function hideDialog() {
+    dialog.classList.remove('isvisible');
+    overlay.classList.remove('isvisible');
+    isVisible = false;
+}
 
-
+onEvent('load', window, function() {
+    clearForm();
+});
+  
+onEvent('click', contact, function() {
+    showDialog()
+});
+  
+onEvent('click', overlay, function() {
+    if (isVisible) hideDialog();
+});
+  
+onEvent('keyup', document, function(event) {
+    if (isVisible && event.key === 'Escape') {
+        hideDialog();
+    }
+});
+  
+onEvent('click', button, function() {
+    alert.classList.add('isvisible');
+    hideDialog();
+    setTimeout(function() {
+        alert.classList.remove('isvisible');
+        clearForm();
+    }, 5500);
+});

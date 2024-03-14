@@ -31,7 +31,7 @@
                 <nav>
                     <div class="bar" id="bar">
                     <ul>
-                        <li><a href="">Login <i class="fa-solid fa-user"></i></a></li><!--update href for login-->
+                        <li><a href="#" class="sign-up-load">Login <i class="fa-solid fa-user"></i></a></li><!--update href for login-->
                         <li><a><i class="fa-solid fa-cart-shopping"></i></a></li>
                     </ul>
                     </div>
@@ -41,28 +41,25 @@
             </div>
         </header>
         <main>
-            <section>
-                <div class="signup-page center">
+            <section class="sign-up-section">
+                <h2>Sign Up Now</h2>
+                <div class="sign-up-form">
                     <form>
-                        <input type="text" class="username" placeholder="Username">
-                        <input type="text" class="email" placeholder="E-mail">
-                        <input type="password" class="password" placeholder="Password">
-                           <button>Log in</button>
-                           <button>cancel</button>
+                        <input type="text" placeholder="User name">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <input type="button" value="Login">
                     </form>
                 </div>
             </section>
+            <div class="overlay"></div>
             <section>
                 <div class="container">
                     <div class="case">
                         <div class="slider">
                             <div class="slide_1 view">
-                                <div class="slide_1-text">
-                                    <p><span class="heading">Spring Sale!</span><br> Limited Edition SmartWatches Starting at just <span>$199.99</span></p>
-                                </div>
-                                <div>
-                                    <img src="./assets/media/watches.jpg" alt="watches">
-                                </div>
+                                <p><span class="heading">Spring Sale!</span><br> Limited Edition SmartWatches Starting at just <span>$199.99</span></p>
+                                <img src="./assets/media/watches.jpg" alt="watches">
                             </div>
                             <div class="slide_2 view">
                                 <p>Latest deals on SmartPhones. Check details for description.</p>
@@ -296,9 +293,6 @@
                             <div class="promotion-button flex gap-10">
                                 <div class="button flex">
                                     <a href="#" class="primary-icon-btn">Apply Now</a>
-                                </div>
-                                <div class="button flex">
-                                    <a href="#" class="primary-icon-btn">Learn More</a>
                                 </div>
                             </div>
                         </div>
