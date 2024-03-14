@@ -3,7 +3,7 @@
 :root {
     --app-background-white: #f1f2f6;
     --background-dark: rgb(24, 23, 31);
-    --purple-dry: #000
+    --purple-dry: #000;
 }
 
 .flex {
