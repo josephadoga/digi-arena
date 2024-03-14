@@ -141,11 +141,11 @@ nav ul li a:hover {
 }
 
 .slide_1 {
-    background-color: #AE2E01;
+    background-color: #000;
 }
 
 .slide_2 {
-    background-color: #000;
+    background-color: #AE2E01;
 }
 
 .slide_1 img{
@@ -158,10 +158,11 @@ nav ul li a:hover {
 
 .controls .arrow {
     position: absolute;
-    top: 45%;
+    top: 50%;
+    transform: translateY(-50%);
     cursor: pointer;
     font-size: 25px;
-    padding: 10px;
+    padding: 20px;
     color: var(--purple-dry);
 }
 
