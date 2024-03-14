@@ -126,6 +126,7 @@ nav ul li a:hover {
     position: relative;
     overflow: hidden;
     border-radius: 7px;
+    width: 100%;
 }
 
 .slider {
@@ -143,33 +144,52 @@ nav ul li a:hover {
 }
 
 .slide_1 {
-    background-color: #000;
+    background-color: #fff;
+    padding: 10px;
 }
 
 .slide_2 {
-    background-color: #AE2E01;
+    background-color: #fff;
+    padding: 13px;
 }
 
 .slide_1 p {
-    color: #fff;
-    position: absolute;
+    color: #000;
+    position: relative;
     text-align: center;
     font-size: 28px;
     font-weight: 600;
     width: 50%;
-    height: 70%;
+    left: 10px;
     align-items: center;
+    display: flexbox;
+    margin-right: 20px;
 }
 
 .slide_2 p {
-    color: #fff;
-    position: absolute;
+    color: #000;
+    position: relative;
     font-style: oblique;
+    text-align: center;
     width: 50%;
-    padding: 72px;
+    padding: 20px;
+    left: 14px;
+    min-height: 40px;
     font-weight: 500;
     font-size: 22px;
-    text-align: left;
+    align-items: center;
+    display: flexbox;
+    margin-right: 20px;
+}
+
+.slide_1 img {
+    padding: 30px;
+    margin-right: 40px;
+}
+
+.slide_2 img {
+    padding: 30px;
+    margin-right: 40px;
 }
 
 .controls .arrow {
@@ -207,20 +227,23 @@ nav ul li a:hover {
     border: 2px solid #333;
     border-radius: 50px;
     margin: 10px;
-    background-color: var(--purple-dry);
+    background-color: transparent;
     cursor: pointer;
 }
 
 .controls ul li.selected {
-    background: transparent;
+    background-color: var(--purple-dry);
 }
 
 /*--Responsiveness of banner*/
-@media (max-width: 900px) {
-      p, img {
-        display: flex;
+@media (max-width:700px) {
+      .view {
+        display: grid;
         justify-content: space-between;
         flex-direction: column;
-    }
+      }
+        .case {
+            height: auto;
+        }
 }
 

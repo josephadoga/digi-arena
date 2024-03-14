@@ -38,14 +38,14 @@ document.querySelectorAll('.controls li').forEach(function(indicator, ind) {
 });
 
 rightArrow.addEventListener('click', function() {
-    sectionIndex = (sectionIndex < 1) ? sectionIndex + 1 : 1;
+    sectionIndex = (sectionIndex < 1) ? sectionIndex + 1 : 0;
     setIndex();
     indicatorParents.children[sectionIndex].classList.add('selected');
     
 });
 
 leftArrow.addEventListener('click', function() {
-    sectionIndex = (sectionIndex > 0) ? sectionIndex - 1 : 0;
+    sectionIndex = (sectionIndex > 0) ? sectionIndex - 1 : 1;
     setIndex();
     indicatorParents.children[sectionIndex].classList.add('selected');
     
