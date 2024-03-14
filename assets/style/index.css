@@ -120,11 +120,14 @@ nav ul li a:hover {
 
 .promotions {
     margin-top: 5%;
-    display: flex;
-    align-items: center;
     width: 100%;
     height: 500px;
     background-color: #fff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
 }
 
 .promotions .card {
@@ -144,12 +147,13 @@ nav ul li a:hover {
     font-size: 35px;
 }
 
-.text h2 {
-    display: flex;
+.text p {
+    font-size: 18px;
+    font-weight: 600;
     gap: 7px;
 }
 
-.text h2 p {
+.text p span {
     color: #474EB7;
 }
 
@@ -179,12 +183,17 @@ button:last-of-type {
     width: 50%;
 }
 
+
 /* responsiveness */
 
 /* laptop view */
 @media (min-width: 769px) {
     .container {
         justify-content: space-evenly;
+    }
+
+    .text p {
+        font-size: 25px;
     }
 }
 
@@ -200,10 +209,6 @@ button:last-of-type {
 
     .promotions {
         margin-top: 20%;
-    }
-
-    .text {
-        margin-left: 10%;
     }
 
     .container {
