@@ -125,7 +125,9 @@ nav ul li a:hover {
     background-color: #e0e0e0;
     position: relative;
     overflow: hidden;
+    border-radius: 7px;
 }
+
 .slider {
     height: 100%;
     width: 200%;
@@ -146,14 +148,6 @@ nav ul li a:hover {
 
 .slide_2 {
     background-color: #AE2E01;
-}
-
-.slide_1 img{
-    height: 400px;
-}
-
-.slide_2 img{
-    height: 400px;
 }
 
 .controls .arrow {
